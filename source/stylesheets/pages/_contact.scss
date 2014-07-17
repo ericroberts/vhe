@@ -1,0 +1,21 @@
+body.contact {
+  > section {
+    @include main-container;
+
+    > h1 {
+      @extend %grid-column-12;
+    }
+    .contact-map,
+    .contact-details {
+      @extend %grid-column-6;
+    }
+
+    .contact-details {
+      address {
+        font-style: normal;
+        line-height: 1.5rem;
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}
