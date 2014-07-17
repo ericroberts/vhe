@@ -22,3 +22,22 @@
   @extend %icon;
   content: $character;
 }
+
+@mixin main-container {
+  @include grid-row;
+  padding: 4rem 0;
+
+  h1, h2 { font-weight: bold; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.25rem; }
+}
+
+%grid-row {
+  @include grid-row;
+}
+
+@for $i from 1 through $total-columns {
+  %grid-column-#{$i} {
+    @include grid-column($i);
+  }
+}

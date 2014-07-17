@@ -1,0 +1,12 @@
+body.services {
+  > section {
+    @include main-container;
+
+    .service-list {
+      @include grid-column(4);
+    }
+    .past-projects {
+      @include grid-column($columns: 6, $offset: 2);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+body.about {
+  > section {
+    @include main-container;
+
+    .about-text,
+    .about-images {
+      @extend %grid-column-6;
+    }
+  }
+}
