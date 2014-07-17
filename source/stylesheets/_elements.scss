@@ -1,0 +1,21 @@
+.button {
+  // @include box-shadow(0 3px 0 $dark-yellow);
+  border-bottom: 3px solid $dark-yellow;
+  border-radius: 5px;
+
+  background: $yellow;
+
+  color: $grey;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  &:hover {
+    background: lighten($yellow, 10);
+
+    color: $grey;
+  }
+  &:active {
+    margin-top: 3px;
+    border-bottom-width: 0;
+  }
+}

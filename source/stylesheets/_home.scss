@@ -1,0 +1,44 @@
+.cover {
+  background: $yellow;
+  padding: 12rem 0 4rem;
+
+  h1 {
+    @include grid-row;
+    padding: 0 3rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.cta {
+  @include grid-row;
+  padding: 4rem $column-gutter/2;
+  text-align: center;
+}
+
+section.services {
+  @include grid-row;
+
+  section {
+    @include grid-column(12);
+
+    @media #{$medium-up} {
+      @include grid-column(4);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $grey;
+
+      &:before {
+        color: $yellow;
+        margin: 0 0.5rem 0 0;
+      }
+    }
+
+    &.residential h1:before { @include icon("\f015"); } // fa-home
+    &.commercial h1:before { @include icon("\f1ad"); } // fa-building
+    &.industrial h1:before { @include icon("\f0d1"); } // fa-truck
+  }
+}

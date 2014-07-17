@@ -1,0 +1,45 @@
+footer {
+  background: #dcdcdc;
+  padding: $column-gutter 0;
+  margin-top: 4rem;
+  color: $grey;
+
+  section {
+    @include grid-row;
+
+    .ecra-esa,
+    .contact {
+      @include grid-column(6);
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .ecra-esa {
+      p { font-weight: bold; }
+
+      .logo {
+        display: inline-block;
+        width: 160px;
+        height: 140px;
+        margin: 0 0 0.5rem 0;
+        @include image-2x("ecra-esa");
+      }
+    }
+
+    .contact {
+      text-align: right;
+
+      p {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2rem;
+
+        small {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

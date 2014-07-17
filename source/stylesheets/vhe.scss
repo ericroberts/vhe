@@ -1,168 +1,20 @@
+// Libraries
 @import "compass";
 @import "foundation";
 @import "font-awesome";
+
+// Mixins
 @import "mixins";
 
+// Variables
 $yellow: #f8ba2f;
 $dark-yellow: #dba428;
 $grey: #414141;
 
-header {
-  background: $grey;
+// Frame
+@import "header";
+@import "footer";
+@import "elements";
 
-  nav {
-    @include grid-row;
-    padding: $column-gutter/2;
-
-    h1 {
-      float: left;
-      margin: 0;
-
-      line-height: 0;
-
-      a {
-        @include hide-text;
-
-        display: inline-block;
-        width: 220px;
-        height: 90px;
-        @include image-2x("logo");
-      }
-    }
-    ul {
-      float: right;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: inline-block;
-        padding: 30px 0;
-
-        a {
-          display: inline-block;
-          line-height: 30px;
-          padding: 0 1rem;
-          color: #fff;
-
-          &:hover {
-            color: $yellow;
-          }
-        }
-      }
-    }
-  }
-}
-
-footer {
-  background: #dcdcdc;
-  padding: $column-gutter 0;
-  margin-top: 4rem;
-  color: $grey;
-
-  section {
-    @include grid-row;
-
-    .ecra-esa,
-    .contact {
-      @include grid-column(6);
-
-      p {
-        margin: 0;
-      }
-    }
-
-    .ecra-esa {
-      p { font-weight: bold; }
-
-      .logo {
-        display: inline-block;
-        width: 160px;
-        height: 140px;
-        margin: 0 0 0.5rem 0;
-        @include image-2x("ecra-esa");
-      }
-    }
-
-    .contact {
-      text-align: right;
-
-      p {
-        font-size: 2rem;
-        font-weight: bold;
-        line-height: 2rem;
-
-        small {
-          font-size: 0.8rem;
-        }
-      }
-    }
-  }
-}
-
-.button {
-  // @include box-shadow(0 3px 0 $dark-yellow);
-  border-bottom: 3px solid $dark-yellow;
-  border-radius: 5px;
-
-  background: $yellow;
-
-  color: $grey;
-  font-size: 1.25rem;
-  font-weight: 600;
-
-  &:hover {
-    background: lighten($yellow, 10);
-
-    color: $grey;
-  }
-  &:active {
-    margin-top: 3px;
-    border-bottom-width: 0;
-  }
-}
-
-.cover {
-  background: $yellow;
-  padding: 12rem 0 4rem;
-
-  h1 {
-    @include grid-row;
-    padding: 0 3rem;
-    color: #fff;
-    text-align: center;
-  }
-}
-
-.cta {
-  @include grid-row;
-  padding: 4rem $column-gutter/2;
-  text-align: center;
-}
-
-.services {
-  @include grid-row;
-
-  section {
-    @include grid-column(12);
-
-    @media #{$medium-up} {
-      @include grid-column(4);
-    }
-
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: $grey;
-
-      &:before {
-        color: $yellow;
-        margin: 0 0.5rem 0 0;
-      }
-    }
-
-    &.residential h1:before { @include icon("\f015"); } // fa-home
-    &.commercial h1:before { @include icon("\f1ad"); } // fa-building
-    &.industrial h1:before { @include icon("\f0d1"); } // fa-truck
-  }
-}
+// Pages
+@import "home";
