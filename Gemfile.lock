@@ -21,6 +21,8 @@ GEM
     erubis (2.7.0)
     execjs (2.2.1)
     ffi (1.9.3)
+    font-awesome-middleman (4.1.1)
+      middleman-core (>= 3.0.0)
     fssm (0.2.10)
     haml (4.0.5)
       tilt
@@ -107,5 +109,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  font-awesome-middleman
   middleman (~> 3.3.3)
   slim
