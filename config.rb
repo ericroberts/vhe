@@ -25,9 +25,9 @@ require 'slim'
 #   page "/admin/*"
 # end
 
-proxy "/services", "/services.html"
-proxy "/about", "/about.html"
-proxy "/contact", "/contact.html"
+proxy "/services/index.html", "/services.html"
+proxy "/about/index.html", "/about.html"
+proxy "/contact/index.html", "/contact.html"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
