@@ -8747,16 +8747,9 @@ section.services section.residential h1:before, section.services section.commerc
   line-height: inherit; }
 
 /* line 40, /Users/Eric/Code/Projects/vhe/source/stylesheets/_mixins.scss */
-body.about > section .about-text,
-body.about > section .about-images, body.contact > section .contact-map,
+body.services > section .service-list, body.services > section .past-projects, body.about > section .about-text,
+body.about > section .about-images, body.contact > section > h1, body.contact > section .contact-map,
 body.contact > section .contact-details {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 50%;
-  float: left; }
-
-/* line 40, /Users/Eric/Code/Projects/vhe/source/stylesheets/_mixins.scss */
-body.contact > section > h1 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
@@ -9009,19 +9002,21 @@ body.services > section {
   /* line 32, /Users/Eric/Code/Projects/vhe/source/stylesheets/_mixins.scss */
   body.services > section h2 {
     font-size: 1.25rem; }
-  /* line 5, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_services.scss */
-  body.services > section .service-list {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 33.33333%;
-    float: left; }
-  /* line 8, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_services.scss */
-  body.services > section .past-projects {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 50%;
-    float: left;
-    margin-left: 16.66667% !important; }
+  @media only screen and (min-width: 40.063em) {
+    /* line 5, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_services.scss */
+    body.services > section .service-list {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 33.33333%;
+      float: left; } }
+  @media only screen and (min-width: 40.063em) {
+    /* line 12, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_services.scss */
+    body.services > section .past-projects {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 50%;
+      float: left;
+      margin-left: 16.66667% !important; } }
 
 /* line 2, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_about.scss */
 body.about > section {
@@ -9048,6 +9043,14 @@ body.about > section {
   /* line 32, /Users/Eric/Code/Projects/vhe/source/stylesheets/_mixins.scss */
   body.about > section h2 {
     font-size: 1.25rem; }
+  @media only screen and (min-width: 40.063em) {
+    /* line 6, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_about.scss */
+    body.about > section .about-text,
+    body.about > section .about-images {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 50%;
+      float: left; } }
 
 /* line 2, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_contact.scss */
 body.contact > section {
@@ -9074,7 +9077,20 @@ body.contact > section {
   /* line 32, /Users/Eric/Code/Projects/vhe/source/stylesheets/_mixins.scss */
   body.contact > section h2 {
     font-size: 1.25rem; }
-  /* line 14, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_contact.scss */
+  /* line 9, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_contact.scss */
+  body.contact > section .contact-map,
+  body.contact > section .contact-details {
+    margin-bottom: 2rem; }
+    @media only screen and (min-width: 40.063em) {
+      /* line 9, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_contact.scss */
+      body.contact > section .contact-map,
+      body.contact > section .contact-details {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 50%;
+        float: left;
+        margin-bottom: 0; } }
+  /* line 20, /Users/Eric/Code/Projects/vhe/source/stylesheets/pages/_contact.scss */
   body.contact > section .contact-details address {
     font-style: normal;
     line-height: 1.5rem;
