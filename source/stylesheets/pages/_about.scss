@@ -4,7 +4,11 @@ body.about {
 
     .about-text,
     .about-images {
-      @extend %grid-column-6;
+      @extend %grid-column-12;
+
+      @media #{$medium-up} {
+        @include grid-column(6);
+      }
     }
   }
 }
