@@ -25,7 +25,7 @@ require 'slim'
 #   page "/admin/*"
 # end
 
-proxy "/services/index.html", "/services.html"
+proxy "/projects/index.html", "/projects.html"
 proxy "/about/index.html", "/about.html"
 proxy "/contact/index.html", "/contact.html"
 

@@ -1,0 +1,18 @@
+body.projects {
+  > section {
+    @include main-container;
+  }
+
+  .gallery {
+    @include block-grid(6);
+  }
+
+  .clients {
+    @include block-grid(5);
+
+    li img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

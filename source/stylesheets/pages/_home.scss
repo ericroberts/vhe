@@ -1,5 +1,6 @@
 .cover {
-  background: $yellow;
+  background: image-url("cover.jpg") 50% 50% $yellow;
+  background-size: cover;
   padding: 12rem 0 4rem;
 
   h1 {

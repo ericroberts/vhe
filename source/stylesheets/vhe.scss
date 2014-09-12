@@ -2,6 +2,7 @@
 @import "compass";
 @import "foundation";
 @import "font-awesome";
+@import "fancybox/jquery.fancybox.css";
 
 // Mixins
 @import "mixins";
@@ -18,6 +19,6 @@ $grey: #414142;
 
 // Pages
 @import "pages/home";
-@import "pages/services";
+@import "pages/projects";
 @import "pages/about";
 @import "pages/contact";
