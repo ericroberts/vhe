@@ -3,7 +3,7 @@ section
   ul.gallery
     - Dir.foreach('./source/images/gallery') do |image|
       - next unless image.end_with?('.jpg')
-      li= link_to image_tag("thumbs/#{image}"), "images/gallery/#{image}", class: 'fancybox', rel: 'group'
+      li= link_to image_tag("thumbs/#{image}"), "/images/gallery/#{image}", class: 'fancybox', rel: 'group'
 
 section
   h1 Some of Our Clients
