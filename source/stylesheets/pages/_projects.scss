@@ -8,7 +8,7 @@ body.projects {
   }
 
   .clients {
-    @include block-grid(5);
+    @include block-grid(6);
 
     li img {
       display: block;
