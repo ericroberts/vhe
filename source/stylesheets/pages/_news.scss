@@ -1,0 +1,5 @@
+body.news {
+	> section {
+		@include main-container;
+	}
+}

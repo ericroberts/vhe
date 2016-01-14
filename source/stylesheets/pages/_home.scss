@@ -24,7 +24,7 @@ section.services {
     @include grid-column(12);
 
     @media #{$medium-up} {
-      @include grid-column(4);
+      @include grid-column(3);
     }
 
     h1 {

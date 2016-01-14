@@ -27,6 +27,7 @@ require 'slim'
 
 proxy "/projects/index.html", "/projects.html"
 proxy "/about/index.html", "/about.html"
+proxy "/news/index.html", "/news.html"
 proxy "/contact/index.html", "/contact.html"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
