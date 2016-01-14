@@ -3,7 +3,7 @@ body.about {
     @include main-container;
 
     .about-text,
-    .about-images {
+    .about-memberships {
       @extend %grid-column-12;
 
       @media #{$medium-up} {
