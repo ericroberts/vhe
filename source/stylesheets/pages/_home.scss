@@ -24,7 +24,7 @@ section.services {
     @include grid-column(12);
 
     @media #{$medium-up} {
-      @include grid-column(3);
+      @include grid-column(4);
     }
 
     h1 {
@@ -40,6 +40,6 @@ section.services {
 
     &.residential h1:before { @include icon("\f015"); } // fa-home
     &.commercial h1:before { @include icon("\f1ad"); } // fa-building
-    &.industrial h1:before { @include icon("\f0d1"); } // fa-truck
+    &.horticultural h1:before { @include icon("\f06c"); } // fa-leaf
   }
 }

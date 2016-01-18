@@ -25,10 +25,16 @@ require 'slim'
 #   page "/admin/*"
 # end
 
-proxy "/projects/index.html", "/projects.html"
-proxy "/about/index.html", "/about.html"
-proxy "/news/index.html", "/news.html"
-proxy "/contact/index.html", "/contact.html"
+[
+  "about",
+  "news",
+  "contact",
+  "residential",
+  "commercial",
+  "horticultural"
+].each do |root_page|
+  proxy "/#{root_page}/index.html", "/#{root_page}.html"
+end
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
