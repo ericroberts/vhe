@@ -1,0 +1,5 @@
+body.residential {
+	> section {
+		@include main-container;
+	}
+}

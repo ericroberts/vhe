@@ -1,0 +1,36 @@
+section
+  .columns.medium-6
+    h1 Residential
+
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, nisi eu viverra pretium, arcu ex porta quam, sit amet malesuada lectus sem ac lacus. Sed pulvinar nibh dapibus scelerisque fermentum. Sed egestas, neque sed ultrices volutpat, orci libero vulputate libero, a feugiat lectus quam in mauris. Curabitur dictum sapien augue, eu pellentesque lectus iaculis ultricies. Etiam porttitor ut nisi vel lobortis. In volutpat nibh id ullamcorper porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+    p Aliquam eu varius leo. Ut blandit orci purus, in sollicitudin sapien imperdiet vel. Mauris hendrerit tristique sem, nec condimentum nisi lobortis a. Suspendisse massa mauris, volutpat at eros at, lacinia tincidunt nunc. Curabitur efficitur malesuada massa sit amet rutrum. Mauris sed lectus vel justo pellentesque fringilla. Nam ultrices fermentum libero ac imperdiet. Curabitur euismod eros molestie arcu porta luctus. Morbi dolor lectus, feugiat porttitor metus vel, tempor hendrerit orci. Integer eget enim sed nunc aliquet condimentum. Proin a molestie est. Nunc blandit euismod congue. Morbi convallis nibh non nunc lobortis aliquet.
+
+    p Nullam pulvinar at lacus eu eleifend. Mauris pulvinar fringilla aliquam. Quisque suscipit, metus vel efficitur dictum, mi nulla elementum diam, at fermentum quam ligula elementum enim. Nam finibus cursus augue, in sagittis dolor interdum at. Mauris vulputate, augue quis accumsan malesuada, nisl ex interdum diam, sed pulvinar velit neque porta sem. Etiam vulputate eu turpis eu sollicitudin. In in ipsum dui. Pellentesque pharetra eleifend dolor, vitae egestas lectus. Vivamus tempor fringilla tortor, non lobortis lorem ultricies in. Duis a leo posuere, pretium elit sed, dignissim mi. Mauris molestie, nibh quis blandit lobortis, lacus ex convallis diam, vel iaculis magna augue in lacus. Duis ultrices sapien eget ante sagittis tristique. In ac mollis eros. Donec iaculis aliquam sapien, nec venenatis quam. Aenean nec urna sed justo accumsan porta.
+
+  .columns.medium-6
+    ul.small-block-grid-4
+      - Dir.foreach('./source/images/residential') do |image|
+        - next unless image.end_with?('.jpg')
+        li= link_to image_tag("/images/residential/#{image}"), "/images/residential/#{image}", class: 'fancybox', rel: 'group'
+
+section
+  .columns.medium-12
+    h1 Some of Our Clients
+    ul.small-block-grid-8
+      ruby:
+        client_links = [
+          ['acrobat', 'http://www.acrobatcontrols.com'],
+          ['bayviewflowers', 'http://www.bayviewflowers.com/'],
+          ['creekside', 'http://www.creeksidegreenhouses.ca/index.html'],
+          ['dsbn', 'http://www.dsbn.edu.on.ca/'],
+          ['linwell', 'http://linwellgardens.com/'],
+          ['paulboers', 'http://www.paulboers.com/'],
+          ['prins', 'http://www.prinsgrow.com/index2.php'],
+          ['schenck', 'http://www.schenckfarms.com/'],
+          ['springvalley', 'http://www.springvalleygardens.ca/'],
+          ['vanderzalm', 'http://www.vanderzalm.ca/'],
+          ['versluis', 'http://www.versluisbrothers.ca/index.html']
+        ]
+      - client_links.each do |client, link|
+        li= link_to image_tag("clients/images_clientlogos_#{client}.jpg"), link, target: '_blank'
