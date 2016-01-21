@@ -1,0 +1,5 @@
+body.commercial {
+	> section {
+		@include main-container;
+	}
+}
